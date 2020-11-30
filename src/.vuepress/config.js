@@ -4,8 +4,8 @@ module.exports = {
   locales: {
     '/': {
       lang: 'zh-CN', // 将会被设置为 <html> 的 lang 属性
-      title: '萤火钱包文档',
-      description: '萤火钱包文档网站'
+      title: '链联金服文档',
+      description: '链联金服文档网站'
     },
     '/en/': {
       lang: 'en-US',

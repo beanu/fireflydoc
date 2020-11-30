@@ -1,11 +1,11 @@
 ## JS Bridge接口协议
 
-钱包给JS（即DAPP）提供的原生能力
+链联金服给JS（即DAPP）提供的原生能力
 
 - 取消back recovery两个接口
 
 ## 通过npm引用帮助类库
-- 可以通过[fireflywallet-api](https://github.com/fchainio/fireflywallet-api)，通过NPM或yarn引入，调用以下接口
+- 可以通过[wallet-api](https://github.com/fchainio/fireflywallet-api)，通过NPM或yarn引入，调用以下接口
 
 
 ### 所有接口函数说明
@@ -350,12 +350,3 @@ window.FFW = {
 
 }
 ```
-
-## 以太钱包协议
-
-  萤火钱包v3.x版本支持比特币、以太（含ERC20）、恒星三种区块链代币，并且在原有JS API的基础支持恒星生态的基础上，通过web3.js支持以太DApp。
-  DApp浏览器兼容Metamask, 你可以直接把你的Ethereum DApp迁移到 萤火钱包， 甚至不用写任何代码。
-
-  萤火钱包DApp浏览器和DApp的交互基于`EIP1102`的标准，DApp必须按照`EIP1102`的方式才可以拿到用户帐号、和执行其他操作。
-
-  你也可以检查 metamask 的相关[文档](https://github.com/MetaMask/faq/blob/09281ac3dfcc19703f25fc9c960d2b7c65a0a4b3/DEVELOPERS.md#partly_sunny-web3---ethereum-browser-environment-check)

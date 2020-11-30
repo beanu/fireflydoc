@@ -1,9 +1,9 @@
 ## URL Schema协议
 
 默认需要支持的协议包括：
- 1. xff://open.fchain.io
+ 1. xff://open.qlchain.io
     - scheme: xff  
-    - host: open.fchain.io
+    - host: open.qlchain.io
  2. web+stellar://
     - 参考实现自官方标准[SEP0007](https://github.com/stellar/stellar-protocol/blob/master/ecosystem/sep-0007.md)
 
@@ -41,10 +41,10 @@
 ---
 ## 启动App
 - 协议URL
-    - xff://open.fchain.io/app/start/
+    - xff://open.qlchain.io/app/start/
 - 协议示例
 ```
-xff://open.fchain.io/app/start/
+xff://open.qlchain.io/app/start/
 ```
 - 参数说明
     - 无需参数
@@ -53,10 +53,10 @@ xff://open.fchain.io/app/start/
 ## 钱包
 ### 创建或者导入钱包页面
 - 协议URL
-    - xff://open.fchain.io/wallet/create/
+    - xff://open.qlchain.io/wallet/create/
 - 协议示例
 ```
-xff://open.fchain.io/wallet/create/
+xff://open.qlchain.io/wallet/create/
 ```
 - 参数说明
  
@@ -70,10 +70,10 @@ xff://open.fchain.io/wallet/create/
 ## 行情
 ### 打开交易对(K线图)
 - 协议URL
-    - xff://open.fchain.io/market/kline
+    - xff://open.qlchain.io/market/kline
 - 协议示例
 ```
-xff://open.fchain.io/market/kline?basecode=XLM&baseissuer=&countercode=XCN&counterissuer=GCNY5OXYSY4FKHOPT2SPOQZAOEIGXB5LBYW3HVU3OWSTQITS65M5RCNY
+xff://open.qlchain.io/market/kline?basecode=XLM&baseissuer=&countercode=XCN&counterissuer=GCNY5OXYSY4FKHOPT2SPOQZAOEIGXB5LBYW3HVU3OWSTQITS65M5RCNY
 ```
 
 - 参数说明
@@ -87,10 +87,10 @@ xff://open.fchain.io/market/kline?basecode=XLM&baseissuer=&countercode=XCN&count
 
 ## 添加自定义交易对
 - 协议URL
-    - xff://open.fchain.io/market/addpair
+    - xff://open.qlchain.io/market/addpair
 - 协议示例
 ```
-xff://open.fchain.io/market/addpair?basecode=XLM&baseissuer=&countercode=XCN&counterissuer=GCNY5OXYSY4FKHOPT2SPOQZAOEIGXB5LBYW3HVU3OWSTQITS65M5RCNY
+xff://open.qlchain.io/market/addpair?basecode=XLM&baseissuer=&countercode=XCN&counterissuer=GCNY5OXYSY4FKHOPT2SPOQZAOEIGXB5LBYW3HVU3OWSTQITS65M5RCNY
 ```
 - 参数说明
 
@@ -105,10 +105,10 @@ xff://open.fchain.io/market/addpair?basecode=XLM&baseissuer=&countercode=XCN&cou
 ## Dapp
 ## 探索Tab打开Dapp信息页
 - 协议URL 
-    - xff://open.fchain.io/discovery/dappinfo
+    - xff://open.qlchain.io/discovery/dappinfo
 - 协议示例
 ```
-xff://open.fchain.io/discovery/dappinfo?title=dappname&appId=000001 
+xff://open.qlchain.io/discovery/dappinfo?title=dappname&appId=000001 
 ```
 - 参数说明
 
@@ -119,10 +119,10 @@ xff://open.fchain.io/discovery/dappinfo?title=dappname&appId=000001
 
 ## 打开具体Dapp
 - 协议URL 
-    - xff://open.fchain.io/dapp/container
+    - xff://open.qlchain.io/dapp/container
 - 协议示例
 ```
-xff://open.fchain.io/dapp/container?title=dappname&appId=000001&url=http://fchain.io&color=#313035
+xff://open.qlchain.io/dapp/container?title=dappname&appId=000001&url=http://qlchain.io&color=#313035
 ```
 - 参数说明，可以添加其他参数，并传递下去，从而在打开DApp时，由DApp自行获取，进行不同的业务处理
 
@@ -137,10 +137,10 @@ xff://open.fchain.io/dapp/container?title=dappname&appId=000001&url=http://fchai
 ## 添加联系人
 ### 打开添加联系人界面，给用户添加联系人
 - 协议URL
-    - XFF://open.fchain.io/contacts/create
+    - XFF://open.qlchain.io/contacts/create
 - 示例
 ```
-XFF://open.fchain.io/contacts/create?name=开放平台&account=GBUKVELXNRMYA4ZZXCVDPNCKZNZ2AOU5IE45ASAFGPF7EDTZCVJU42UA&memo_type=MEMO_TEXT&memo=123
+XFF://open.qlchain.io/contacts/create?name=开放平台&account=GBUKVELXNRMYA4ZZXCVDPNCKZNZ2AOU5IE45ASAFGPF7EDTZCVJU42UA&memo_type=MEMO_TEXT&memo=123
 ```
 - 参数说明
 
@@ -155,13 +155,13 @@ XFF://open.fchain.io/contacts/create?name=开放平台&account=GBUKVELXNRMYA4ZZX
 ## 授信
 ### 打开资产授信界面，直接授信某个资产，类似于JSBridge的FFW.trust功能,如果有callback参数，则将提交hash或失败的结果返回到callback中
 - 协议URL
-   - XFF://open.fchain.io/trust
+   - XFF://open.qlchain.io/trust
 - 示例
 ```
-XFF://open.fchain.io/trust?code=XCN&issuer=GCNY5OXYSY4FKHOPT2SPOQZAOEIGXB5LBYW3HVU3OWSTQITS65M5RCNY&callback=https%3A%2F%2Fopen.fchain.io%2Ftrust%2Fcallback%2F123
+XFF://open.qlchain.io/trust?code=XCN&issuer=GCNY5OXYSY4FKHOPT2SPOQZAOEIGXB5LBYW3HVU3OWSTQITS65M5RCNY&callback=https%3A%2F%2Fopen.qlchain.io%2Ftrust%2Fcallback%2F123
 ```
 ```
-web+stellar:trust?code=XCN&issuer=GCNY5OXYSY4FKHOPT2SPOQZAOEIGXB5LBYW3HVU3OWSTQITS65M5RCNYcallback=https%3A%2F%2Fopen.fchain.io%2Ftrust%2Fcallback%2F123
+web+stellar:trust?code=XCN&issuer=GCNY5OXYSY4FKHOPT2SPOQZAOEIGXB5LBYW3HVU3OWSTQITS65M5RCNYcallback=https%3A%2F%2Fopen.qlchain.io%2Ftrust%2Fcallback%2F123
 ```
 - 参数
 
@@ -192,10 +192,10 @@ web+stellar:trust?code=XCN&issuer=GCNY5OXYSY4FKHOPT2SPOQZAOEIGXB5LBYW3HVU3OWSTQI
     - XFF、web+stellar 
 - 示例
 ```
-XFF://open.fchain.io/pay?destination=GAD2EAYW6UXQPY6FLEPKOZEABVRU42SQAQVXQ5VOOAERNSTLXK3Q5UZ6&amount=1&asset_code=XFF&asset_issuer=GAZEX2USUBMMWFRZFS77VDJYXUFLXI4ZGFPWX6TBNZCSTEQWNLFZMXFF&memo_type=MEMO_TEXT&memo=pay&msg=test&callback=https%3A%2F%2Fopen.fchain.io%2Ftrust%2Fcallback%2F123
+XFF://open.qlchain.io/pay?destination=GAD2EAYW6UXQPY6FLEPKOZEABVRU42SQAQVXQ5VOOAERNSTLXK3Q5UZ6&amount=1&asset_code=XFF&asset_issuer=GAZEX2USUBMMWFRZFS77VDJYXUFLXI4ZGFPWX6TBNZCSTEQWNLFZMXFF&memo_type=MEMO_TEXT&memo=pay&msg=test&callback=https%3A%2F%2Fopen.qlchain.io%2Ftrust%2Fcallback%2F123
 ```
 ```
-web+stellar:pay?destination=GAD2EAYW6UXQPY6FLEPKOZEABVRU42SQAQVXQ5VOOAERNSTLXK3Q5UZ6&amount=1&asset_code=XFF&asset_issuer=GAZEX2USUBMMWFRZFS77VDJYXUFLXI4ZGFPWX6TBNZCSTEQWNLFZMXFF&memo_type=MEMO_TEXT&memo=pay&msg=test&callback=https%3A%2F%2Fopen.fchain.io%2Ftrust%2Fcallback%2F123
+web+stellar:pay?destination=GAD2EAYW6UXQPY6FLEPKOZEABVRU42SQAQVXQ5VOOAERNSTLXK3Q5UZ6&amount=1&asset_code=XFF&asset_issuer=GAZEX2USUBMMWFRZFS77VDJYXUFLXI4ZGFPWX6TBNZCSTEQWNLFZMXFF&memo_type=MEMO_TEXT&memo=pay&msg=test&callback=https%3A%2F%2Fopen.qlchain.io%2Ftrust%2Fcallback%2F123
 ```
 - 参数
 
@@ -229,10 +229,10 @@ web+stellar:pay?destination=GAD2EAYW6UXQPY6FLEPKOZEABVRU42SQAQVXQ5VOOAERNSTLXK3Q
   - web+stellar
 - 示例
 ```
-XFF://open.fchain.io/pathpay?destination=GAD2EAYW6UXQPY6FLEPKOZEABVRU42SQAQVXQ5VOOAERNSTLXK3Q5UZ6&amount=1&asset_code=XFF&asset_issuer=GAZEX2USUBMMWFRZFS77VDJYXUFLXI4ZGFPWX6TBNZCSTEQWNLFZMXFF&memo_type=MEMO_TEXT&memo=pay&msg=test&callback=https%3A%2F%2Fopen.fchain.io%2Ftrust%2Fcallback%2F123
+XFF://open.qlchain.io/pathpay?destination=GAD2EAYW6UXQPY6FLEPKOZEABVRU42SQAQVXQ5VOOAERNSTLXK3Q5UZ6&amount=1&asset_code=XFF&asset_issuer=GAZEX2USUBMMWFRZFS77VDJYXUFLXI4ZGFPWX6TBNZCSTEQWNLFZMXFF&memo_type=MEMO_TEXT&memo=pay&msg=test&callback=https%3A%2F%2Fopen.qlchain.io%2Ftrust%2Fcallback%2F123
 ```
 ```
-web+stellar://open.fchain.io/pathpay?destination=GAD2EAYW6UXQPY6FLEPKOZEABVRU42SQAQVXQ5VOOAERNSTLXK3Q5UZ6&amount=1&asset_code=XFF&asset_issuer=GAZEX2USUBMMWFRZFS77VDJYXUFLXI4ZGFPWX6TBNZCSTEQWNLFZMXFF&memo_type=MEMO_TEXT&memo=pay&msg=test&callback=https%3A%2F%2Fopen.fchain.io%2Ftrust%2Fcallback%2F123
+web+stellar://open.qlchain.io/pathpay?destination=GAD2EAYW6UXQPY6FLEPKOZEABVRU42SQAQVXQ5VOOAERNSTLXK3Q5UZ6&amount=1&asset_code=XFF&asset_issuer=GAZEX2USUBMMWFRZFS77VDJYXUFLXI4ZGFPWX6TBNZCSTEQWNLFZMXFF&memo_type=MEMO_TEXT&memo=pay&msg=test&callback=https%3A%2F%2Fopen.qlchain.io%2Ftrust%2Fcallback%2F123
 ```
 - 参数
 
@@ -266,10 +266,10 @@ web+stellar://open.fchain.io/pathpay?destination=GAD2EAYW6UXQPY6FLEPKOZEABVRU42S
   - web+stellar
 - 示例
 ```
-XFF://open.fchain.io/tx?xdr=AAAAAAeiAxb1LwfjxVkep2SADWNOalAEK3h2rnAJFsprurcOAAAAZADOysIAAAG7AAAAAQAAAAAAAAAAAAAAAAAAAAAAAAABAAAABua1i%2BivlQAAAAAAAQAAAAAAAAABAAAAAAeiAxb1LwfjxVkep2SADWNOalAEK3h2rnAJFsprurcOAAAAAAAAAAAAmJaAAAAAAAAAAAA%3D&msg=test&pubkey=GAD2EAYW6UXQPY6FLEPKOZEABVRU42SQAQVXQ5VOOAERNSTLXK3Q5UZ6&callback=https%3A%2F%2Fopen.fchain.io%2Ftrust%2Fcallback%2F123
+XFF://open.qlchain.io/tx?xdr=AAAAAAeiAxb1LwfjxVkep2SADWNOalAEK3h2rnAJFsprurcOAAAAZADOysIAAAG7AAAAAQAAAAAAAAAAAAAAAAAAAAAAAAABAAAABua1i%2BivlQAAAAAAAQAAAAAAAAABAAAAAAeiAxb1LwfjxVkep2SADWNOalAEK3h2rnAJFsprurcOAAAAAAAAAAAAmJaAAAAAAAAAAAA%3D&msg=test&pubkey=GAD2EAYW6UXQPY6FLEPKOZEABVRU42SQAQVXQ5VOOAERNSTLXK3Q5UZ6&callback=https%3A%2F%2Fopen.qlchain.io%2Ftrust%2Fcallback%2F123
 ```
 ```
-web+stellar:tx?xdr=AAAAAAeiAxb1LwfjxVkep2SADWNOalAEK3h2rnAJFsprurcOAAAAZADOysIAAAG7AAAAAQAAAAAAAAAAAAAAAAAAAAAAAAABAAAABua1i%2BivlQAAAAAAAQAAAAAAAAABAAAAAAeiAxb1LwfjxVkep2SADWNOalAEK3h2rnAJFsprurcOAAAAAAAAAAAAmJaAAAAAAAAAAAA%3D&msg=test&pubkey=GAD2EAYW6UXQPY6FLEPKOZEABVRU42SQAQVXQ5VOOAERNSTLXK3Q5UZ6&&callback=https%3A%2F%2Fopen.fchain.io%2Ftrust%2Fcallback%2F123
+web+stellar:tx?xdr=AAAAAAeiAxb1LwfjxVkep2SADWNOalAEK3h2rnAJFsprurcOAAAAZADOysIAAAG7AAAAAQAAAAAAAAAAAAAAAAAAAAAAAAABAAAABua1i%2BivlQAAAAAAAQAAAAAAAAABAAAAAAeiAxb1LwfjxVkep2SADWNOalAEK3h2rnAJFsprurcOAAAAAAAAAAAAmJaAAAAAAAAAAAA%3D&msg=test&pubkey=GAD2EAYW6UXQPY6FLEPKOZEABVRU42SQAQVXQ5VOOAERNSTLXK3Q5UZ6&&callback=https%3A%2F%2Fopen.qlchain.io%2Ftrust%2Fcallback%2F123
 ```
 - 参数
 
@@ -304,8 +304,8 @@ web+stellar:tx?xdr=AAAAAAeiAxb1LwfjxVkep2SADWNOalAEK3h2rnAJFsprurcOAAAAZADOysIAA
   - XFF
 - 示例
 ```
-XFF://open.fchain.io/deposit?asset_code=ETH&asset_issuer=GBETHKBL5TCUTQ3JPDIYOZ5RDARTMHMEKIO2QZQ7IOZ4YC5XV3C2IKYU&
-callback=https%3A%2F%2Fopen.fchain.io%2Ftrust%2Fcallback%2F123
+XFF://open.qlchain.io/deposit?asset_code=ETH&asset_issuer=GBETHKBL5TCUTQ3JPDIYOZ5RDARTMHMEKIO2QZQ7IOZ4YC5XV3C2IKYU&
+callback=https%3A%2F%2Fopen.qlchain.io%2Ftrust%2Fcallback%2F123
 ```
 - 参数
 
@@ -343,7 +343,7 @@ callback=https%3A%2F%2Fopen.fchain.io%2Ftrust%2Fcallback%2F123
   - XFF
 - 示例
 ```
-XFF://open.fchain.io/withdraw?destination=1MVrxv4712psDBRMwzLAhJTu2jGHeBqU6H&asset_code=BTC&asset_issuer=GATEMHCCKCY67ZUCKTROYN24ZYT5GK4EQZ65JJLDHKHRUZI3EUEKMTCH&amount=1&memo=123&callback=https%3A%2F%2Fopen.fchain.io%2Ftrust%2Fcallback%2F123
+XFF://open.qlchain.io/withdraw?destination=1MVrxv4712psDBRMwzLAhJTu2jGHeBqU6H&asset_code=BTC&asset_issuer=GATEMHCCKCY67ZUCKTROYN24ZYT5GK4EQZ65JJLDHKHRUZI3EUEKMTCH&amount=1&memo=123&callback=https%3A%2F%2Fopen.qlchain.io%2Ftrust%2Fcallback%2F123
 ```
 - 参数
 
@@ -376,7 +376,7 @@ XFF://open.fchain.io/withdraw?destination=1MVrxv4712psDBRMwzLAhJTu2jGHeBqU6H&ass
   - XFF
 - 示例
 ```
-XFF://open.fchain.io/pool?destination=GDCHDRSDOBRMSUDKRE2C4U4KDLNEATJPIHHR2ORFL5BSD56G4DQXL4VW&msg=test&callback=https%3A%2F%2Fopen.fchain.io%2Ftrust%2Fcallback%2F123
+XFF://open.qlchain.io/pool?destination=GDCHDRSDOBRMSUDKRE2C4U4KDLNEATJPIHHR2ORFL5BSD56G4DQXL4VW&msg=test&callback=https%3A%2F%2Fopen.qlchain.io%2Ftrust%2Fcallback%2F123
 ```
 - 参数
 
@@ -399,12 +399,12 @@ XFF://open.fchain.io/pool?destination=GDCHDRSDOBRMSUDKRE2C4U4KDLNEATJPIHHR2ORFL5
 ---
 
 ## 打开币红包 
-### 直接打开币红包DAPP，考虑将DAPP数据内置到服务器中，币红包的`appid=000003`，打开该DApp将类似于直接调用`xff://open.fchain.io/dapp/container?appId=000003`
+### 直接打开币红包DAPP，考虑将DAPP数据内置到服务器中，币红包的`appid=000003`，打开该DApp将类似于直接调用`xff://open.qlchain.io/dapp/container?appId=000003`
 - 协议
   - XFF
 - 示例
 ```
-xff://open.fchain.io/hb
+xff://open.qlchain.io/hb
 ```
 ---
 
@@ -414,7 +414,7 @@ xff://open.fchain.io/hb
   - XFF
 - 示例
 ```
-xff://open.fchain.io//hb/dapp?k=红包口令
+xff://open.qlchain.io//hb/dapp?k=红包口令
 ```
 - 参数
 
@@ -428,7 +428,7 @@ xff://open.fchain.io//hb/dapp?k=红包口令
 - 协议
   - XFF
 - 示例
-  - xff://open.fchain.io/hb?v=log
+  - xff://open.qlchain.io/hb?v=log
 - 参数
 
 |参数名|类型|是否必填|说明|
@@ -442,7 +442,7 @@ xff://open.fchain.io//hb/dapp?k=红包口令
   - XFF
 - 示例
 ```
-xff://open.fchain.io/asset?asset_code=ETH&asset_issuer=GBETHKBL5TCUTQ3JPDIYOZ5RDARTMHMEKIO2QZQ7IOZ4YC5XV3C2IKYU
+xff://open.qlchain.io/asset?asset_code=ETH&asset_issuer=GBETHKBL5TCUTQ3JPDIYOZ5RDARTMHMEKIO2QZQ7IOZ4YC5XV3C2IKYU
 ```
 - 参数
 

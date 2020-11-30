@@ -1,5 +1,5 @@
-# fireflydoc
-firefly doc website
+# qlchain doc
+qlchain doc website
 
 
 ## Dependencies
@@ -12,7 +12,7 @@ firefly doc website
 
 ### 1. clone this project
 ```
-  git clone git@github.com:fchainio/fireflydoc.git
+  git clone git@github.com:beanu/fireflydoc.git
   cd fireflydoc
 ```
 
