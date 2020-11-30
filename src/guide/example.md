@@ -232,8 +232,6 @@ window.FFW.pay({
 });
 ```
 
-![调用界面](https://static.oschina.net/uploads/space/2018/0806/162145_Uid5_109284.png)
-
 ## 路径支付功能（path payment)
 
 
